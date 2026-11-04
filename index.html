@@ -1,0 +1,471 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Growcer</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css"
+    />
+  </head>
+  <body>
+    <!-- Header / Navbar -->
+    <header>
+      <div class="nav container">
+        <a href="#" class="logo">
+          <img src="images/logo.png" alt="image" />
+        </a>
+
+        <!-- Nav Links -->
+        <div class="nav-links">
+          <a href="#" class="nav-link">Home</a>
+          <a href="#categories" class="nav-link">Categories</a>
+          <a href="#products" class="nav-link">Products</a>
+          <a href="#about" class="nav-link">About</a>
+        </div>
+
+        <!-- Nav Icons -->
+        <div class="nav-icons">
+          <a href="#"><i class="ri-user-line"></i></a>
+          <a href="#"><i class="ri-shopping-bag-4-line"></i></a>
+
+          <!-- Menu Icon -->
+          <div class="menu-icon">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- Home -->
+      <section class="home container" id="home">
+        <img src="images/hero.png" class="home-img" alt="image" />
+        <div class="home-text">
+          <h1>
+            Don't Miss Out on <br />
+            Tasty Grocery Deals!
+          </h1>
+          <p>Save up to 50% off on your first buy</p>
+          <a href="#" class="btn">
+            <i class="ri-shopping-bag-line"></i>
+            Shop Now
+          </a>
+        </div>
+      </section>
+
+      <!-- Categories -->
+      <section class="categories container" id="categories">
+        <div class="heading">
+          <h2>Shop By Category</h2>
+          <a href="#" class="btn btn-rounded">
+            See All <i class="ri-arrow-right-line"></i>
+          </a>
+        </div>
+
+        <div class="categories-container">
+          <div class="box box1">
+            <img src="images/cate1.png" alt="image" />
+            <h2>Fruits</h2>
+            <span>22 Items</span>
+          </div>
+
+          <div class="box box2">
+            <img src="images/cate2.png" alt="image" />
+            <h2>Vegetables</h2>
+            <span>22 Items</span>
+          </div>
+
+          <div class="box box3">
+            <img src="images/cate3.png" alt="image" />
+            <h2>Drinks</h2>
+            <span>22 Items</span>
+          </div>
+
+          <div class="box box4">
+            <img src="images/cate4.png" alt="image" />
+            <h2>Fresh Nuts</h2>
+            <span>22 Items</span>
+          </div>
+
+          <div class="box box5">
+            <img src="images/cate5.png" alt="image" />
+            <h2>Spices</h2>
+            <span>22 Items</span>
+          </div>
+
+          <div class="box box6">
+            <img src="images/cate6.png" alt="image" />
+            <h2>Onions</h2>
+            <span>4 Items</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Banners -->
+      <section class="banners container">
+        <div class="banners-container">
+          <div class="banner-box banner-1">
+            <div class="banner-content">
+              <h2>
+                Everyday fresh & <br />
+                clean with our <br />products
+              </h2>
+              <a href="#" class="btn btn-red">
+                <i class="ri-shopping-bag-line"></i>
+                Shop Now
+              </a>
+            </div>
+            <img src="images/banner-1.png" alt="image" class="banner-img"/>
+          </div>
+
+          <div class="banner-box banner-2">
+            <div class="banner-content">
+              <h2>
+                Make your <br> breakfast healthy <br> and easy
+              </h2>
+              <a href="#" class="btn btn-red">
+                <i class="ri-shopping-bag-line"></i>
+                Shop Now
+              </a>
+            </div>
+            <img src="images/banner-2.png" alt="image" class="banner-img"/>
+          </div>
+        </div>
+      </section>
+
+      <!-- Products -->
+       <section class="products container" id="products">
+        <div class="heading">
+          <h2>Farm Fresh Products</h2>
+          <div class="filter-buttons">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="fruits">Fruits</button>
+            <button class="filter-btn" data-filter="vegetables">Vegetables</button>
+            <button class="filter-btn" data-filter="meats">Meats</button>
+            <button class="filter-btn" data-filter="milk">Milk</button>
+          </div>
+        </div>
+
+        <div class="product-container">
+          <!-- Product 1 -->
+           <div class="product-box">
+            <span class="badge badge-hot">Hot</span>
+            <img src="images/p1.png" alt="image" class="product-img">
+            <span class="category">Vegetable</span>
+            <h3>Red Capsicum</h3>
+            <div class="rating">
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-half-line"></i>
+              <span>(4.5)</span>
+            </div>
+            <div class="product-footer">
+              <span class="price">$20.00</span>
+              <button class="add-to-cart">
+                <i class="ri-shopping-bag-line"></i>
+              </button>
+            </div>
+           </div>
+
+          <!-- Product 2 -->
+           <div class="product-box">
+            <span class="badge badge-discounts">10% Off</span>
+            <img src="images/p2.png" alt="image" class="product-img">
+            <span class="category">Seafood</span>
+            <h3>Fresh Seafood</h3>
+            <div class="rating">
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-half-line"></i>
+              <span>(4.5)</span>
+            </div>
+            <div class="product-footer">
+              <span class="price">$20.00</span>
+              <button class="add-to-cart">
+                <i class="ri-shopping-bag-line"></i>
+              </button>
+            </div>
+           </div>
+
+          <!-- Product 3 -->
+           <div class="product-box">
+            <span class="badge badge-new">New</span>
+            <img src="images/p3.png" alt="image" class="product-img">
+            <span class="category">Fruits</span>
+            <h3>Orange</h3>
+            <div class="rating">
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-half-line"></i>
+              <span>(4.5)</span>
+            </div>
+            <div class="product-footer">
+              <span class="price">$20.00</span>
+              <button class="add-to-cart">
+                <i class="ri-shopping-bag-line"></i>
+              </button>
+            </div>
+           </div>
+
+          <!-- Product 4 -->
+           <div class="product-box">
+            <span class="badge badge-out">Out of Stock</span>
+            <img src="images/p4.png" alt="image" class="product-img">
+            <span class="category">Baking</span>
+            <h3>Eclair</h3>
+            <div class="rating">
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-half-line"></i>
+              <span>(4.5)</span>
+            </div>
+            <div class="product-footer">
+              <span class="price">$20.00</span>
+              <button class="add-to-cart">
+                <i class="ri-shopping-bag-line"></i>
+              </button>
+            </div>
+           </div>
+
+          <!-- Product 5 -->
+           <div class="product-box">
+            <span class="badge badge-hot">Hot</span>
+            <img src="images/p5.png" alt="image" class="product-img">
+            <span class="category">Meat</span>
+            <h3>Raw minced meat</h3>
+            <div class="rating">
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-half-line"></i>
+              <span>(4.5)</span>
+            </div>
+            <div class="product-footer">
+              <span class="price">$20.00</span>
+              <button class="add-to-cart">
+                <i class="ri-shopping-bag-line"></i>
+              </button>
+            </div>
+           </div>
+
+          <!-- Product 6 -->
+           <div class="product-box">
+            <span class="badge badge-discounts">15% Off</span>
+            <img src="images/p6.png" alt="image" class="product-img">
+            <span class="category">Vegetable</span>
+            <h3>Potatoes</h3>
+            <div class="rating">
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-half-line"></i>
+              <span>(4.5)</span>
+            </div>
+            <div class="product-footer">
+              <span class="price">$15.00</span>
+              <button class="add-to-cart">
+                <i class="ri-shopping-bag-line"></i>
+              </button>
+            </div>
+           </div>
+
+          <!-- Product 7 -->
+           <div class="product-box">
+            <span class="badge badge-new">New</span>
+            <img src="images/p7.png" alt="image" class="product-img">
+            <span class="category">Milk</span>
+            <h3>Fresh Milk</h3>
+            <div class="rating">
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-half-line"></i>
+              <span>(4.5)</span>
+            </div>
+            <div class="product-footer">
+              <span class="price">$18.00</span>
+              <button class="add-to-cart">
+                <i class="ri-shopping-bag-line"></i>
+              </button>
+            </div>
+           </div>
+
+          <!-- Product 8 -->
+           <div class="product-box">
+            <span class="badge badge-hot">Hot</span>
+            <img src="images/p8.png" alt="image" class="product-img">
+            <span class="category">Fruits</span>
+            <h3>Peaches</h3>
+            <div class="rating">
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-half-line"></i>
+              <span>(4.5)</span>
+            </div>
+            <div class="product-footer">
+              <span class="price">$22.00</span>
+              <button class="add-to-cart">
+                <i class="ri-shopping-bag-line"></i>
+              </button>
+            </div>
+           </div>
+
+          <!-- Product 9 -->
+           <div class="product-box">
+            <span class="badge badge-discounts">20% Off</span>
+            <img src="images/p9.png" alt="image" class="product-img">
+            <span class="category">Vegetable</span>
+            <h3>Carrots</h3>
+            <div class="rating">
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-half-line"></i>
+              <span>(4.5)</span>
+            </div>
+            <div class="product-footer">
+              <span class="price">$25.00</span>
+              <button class="add-to-cart">
+                <i class="ri-shopping-bag-line"></i>
+              </button>
+            </div>
+           </div>
+
+          <!-- Product 10 -->
+           <div class="product-box">
+            <span class="badge badge-out">Out of Stock</span>
+            <img src="images/p10.png" alt="image" class="product-img">
+            <span class="category">Fruit</span>
+            <h3>Strawberry</h3>
+            <div class="rating">
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-half-line"></i>
+              <span>(4.5)</span>
+            </div>
+            <div class="product-footer">
+              <span class="price">$30.00</span>
+              <button class="add-to-cart">
+                <i class="ri-shopping-bag-line"></i>
+              </button>
+            </div>
+           </div>
+        </div>
+       </section>
+
+       <!-- Shipping -->
+        <section class="shipping container" id="about">
+          <div class="shipping-box">
+            <div class="shipping-content">
+              <h2>We ship on the <br> following day from <br> 10:00 AM to 08:00 PM</h2>
+              <p>For Purchases over $20.00</p>
+              <a href="#" class="btn">
+                <i class="ri-shopping-bag-line"></i>
+                Order Now
+              </a>
+            </div>
+
+            <div class="shipping-image">
+              <img src="images/scooter-3d.png" alt="image">
+            </div>
+          </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+     <footer class="footer">
+      <div class="footer-container container">
+        <div class="footer-col">
+          <div class="footer-logo">
+            <img src="images/logo.png" alt="image">
+          </div>
+
+          <div class="footer-contact">
+            <div class="contact-item">
+              <i class="ri-map-pin-line"></i>
+              <span>3 Bunch Nook, Howefort</span>
+            </div>
+
+            <div class="contact-item">
+              <i class="ri-phone-line"></i>
+              <span>540-025-124553</span>
+            </div>
+
+            <div class="contact-item">
+              <i class="ri-mail-line"></i>
+              <span>example@gmail.com</span>
+            </div>
+
+            <div class="contact-item">
+              <i class="ri-time-line"></i>
+              <span>10:00 - 18:00, Mon - Sat</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h3>Account</h3>
+          <a href="#">Login</a>
+          <a href="#">View Cart</a>
+          <a href="#">My Order</a>
+          <a href="#">New Products</a>
+          <a href="#">Contact Us</a>
+        </div>
+
+        <div class="footer-col">
+          <h3>Company</h3>
+          <a href="#">About Us</a>
+          <a href="#">Privacy & Policy</a>
+          <a href="#">Terms & Conditions</a>
+          <a href="#">Help</a>
+          <a href="#">Careers</a>
+        </div>
+
+        <div class="footer-col">
+          <h3>Payment Methods</h3>
+          <div class="payment-methods">
+            <div class="payment-card">
+              <i class="ri-visa-line"></i>
+            </div>
+
+            <div class="payment-card">
+              <i class="ri-mastercard-line"></i>
+            </div>
+
+            <div class="payment-card">
+              <i class="ri-paypal-line"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="copyright">
+        <p>&copy; 2026 Growser | All Rights Reserved.</p>
+      </div>
+     </footer>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
