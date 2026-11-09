@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Growcer Template Documentation</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333; max-width: 850px; margin: 0 auto; padding: 40px 20px; background-color: #f4f7f6; }
+        .container { background: #fff; padding: 40px; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); border-top: 5px solid #004d43; }
+        h1 { color: #004d43; border-bottom: 2px solid #e0e0e0; padding-bottom: 10px; margin-top: 0; }
+        h2 { color: #027a68; margin-top: 35px; border-left: 4px solid #027a68; padding-left: 10px; }
+        h3 { color: #2d3748; margin-top: 20px; }
+        code { background: #f1f1f1; padding: 3px 6px; border-radius: 4px; font-family: 'Courier New', Courier, monospace; font-size: 0.9em; color: #c7254e; }
+        pre { background: #1a202c; color: #f7fafc; padding: 15px; border-radius: 6px; overflow-x: auto; font-family: 'Courier New', Courier, monospace; font-size: 0.9em; line-height: 1.4; }
+        ul, ol { padding-left: 20px; }
+        li { margin-bottom: 8px; }
+        .note { background: #e6f4f1; border-left: 4px solid #027a68; padding: 15px; margin: 20px 0; border-radius: 0 6px 6px 0; }
+        .file-tree { background: #edf2f7; padding: 15px; border-radius: 6px; font-family: monospace; font-size: 0.95em; color: #2d3748; }
+        .highlight { color: #3182ce; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Growcer - Premium Grocery Website Template Documentation</h1>
+        <p>Thank you for purchasing the <strong>Growcer</strong> Template! This comprehensive guide walks you through extracting files, running the site locally, configuring basic details, and completely customizing the template branding, design structure, content, and imagery assets to fit your supermarket business.</p>
+        
+        <h2>1. Package Archive Layout Structure</h2>
+        <p>When you uncompress your primary template distribution package folder, you will find the following clean architecture assets:</p>
+        <div class="file-tree">
+├── images/          # Directory containing all optimized grocery item graphics & UI icons<br>
+├── index.html       # Primary semantic markup core structure for the storefront<br>
+├── style.css        # Clean, modular global stylesheet controlling all visual layout designs<br>
+├── script.js        # Core JavaScript framework handling smooth scroll and dynamic UI behaviors<br>
+└── documentation.html # This comprehensive installation & customization instruction manual
+        </div>
+
+        <h2>2. Quick Installation & Launch Guide</h2>
+        <p>Follow these absolute steps to get your template project up and running locally on your computer:</p>
+        <ol>
+            <li><strong>Extract Download Archive:</strong> Right-click the downloaded <code>growcer-grocery-template.zip</code> archive and select <strong>Extract All...</strong> to create a standard, uncompressed file directory.</li>
+            <li><strong>Opening the Website Files:</strong> 
+                <ul>
+                    <li>To view the live running template, navigate inside the folder and double-click the <code>index.html</code> file. It will instantly launch inside any modern internet browser (Google Chrome, Safari, Mozilla Firefox, Microsoft Edge).</li>
+                    <li>To customize code structures, download a free source code workspace code editor such as <strong>Visual Studio Code</strong> or Sublime Text, open the program, click <em>File ➔ Open Folder</em>, and select your extracted directory.</li>
+                </ul>
+            </li>
+            <li><strong>Local Git Deployment (Optional):</strong> If you prefer to track revisions via Github, use this complete verified clone path inside your terminal shell core layout execution console:</li>
+        </ol>
+        <pre>git clone https://github.com<br>cd Grocery-Website</pre>
+
+        <h2>3. Template Customization Manual</h2>
+        <p>Every element of the Growcer frontend web platform can be easily configured by opening up the project files inside your code editor workspace.</p>
+        
+        <h3>A. Changing the Store Branding & Logo</h3>
+        <p>Open <code>index.html</code> and search for the logo navigation block near line 10-30. Look for the image source link tag:</p>
+        <pre>&lt;!-- Navigation Logo Block --&gt;<br>&lt;img src="images/logo.png" alt="Growcer Logo"&gt;</pre>
+        <p><strong>To update it:</strong> Simply place your new brand emblem file directly into your local <code>images/</code> folder directory and change the name within the <code>src=""</code> text quotation parameter markup configuration block.</p>
+
+        <h3>B. Editing Category Listings & Grid Labels</h3>
+        <p>Open <code>index.html</code> and locate the section starting with the comment <code>&lt;!-- SHOP BY CATEGORY --&gt;</code>. To update the category text content card layout labels, simply overwrite the text within the heading tags:</p>
+        <pre>&lt;!-- Change Category Title Here --&gt;<br>&lt;h2&gt;Fruits&lt;/h2&gt;<br>&lt;p&gt;22 Items&lt;/p&gt;</pre>
+
+        <h3>C. Updating Product Cards, Pricing, & Sale Badges</h3>
+        <p>Locate the product layout section labeled <code>&lt;!-- Farm Fresh Products Grid --&gt;</code> inside <code>index.html</code>. Each food item is enclosed inside a clean card block component wrapper. You can change product content text, pricing arrays, or discount tags easily:</p>
+        <pre>&lt;!-- Example Product Card Customization structure --&gt;<br>&lt;span class="badge"&gt;10% Off&lt;/span&gt; <span class="highlight">&lt;!-- Change sale status tag here --&gt;</span><br>&lt;h3&gt;Red Capsicum&lt;/h3&gt; <span class="highlight">&lt;!-- Edit product catalog text name here --&gt;</span><br>&lt;span class="price"&gt;$20.00&lt;/span&gt; <span class="highlight">&lt;!-- Adjust retail pricing value here --&gt;</span></pre>
+
+        <h3>D. Substituting Product Images</h3>
+        <p>All stock photography is organized directly inside the local <code>images/</code> directory folder. To swap food items out with your custom grocery inventory assets, overwrite the existing file image names references listed in your elements:</p>
+        <pre>&lt;img src="images/red-capsicum.png" alt="Red Capsicum Image Layout"&gt;</pre>
+
+        <h3>E. Adjusting Theme Colors & Style Typography</h3>
+        <p>Open up the <code>style.css</code> file. All core background brand layout coloring matrices, header font sizing properties, structural dimensions variables, and UI button layouts are configured here.</p>
+        <ul>
+            <li>To modify global button or background accents, find the color variables or search for standard properties like <code>background-color: #004d43;</code> or matching color hex values and replace them with your custom company hexadecimal branding pallet parameters.</li>
+            <li>To adjust layout presentation margins or card scaling blocks elements parameters, alter the CSS grid flex spacing configurations properties values listed in the respective classes.</li>
+        </ul>
+
+        <div class="note">
+            <strong>💡 Pro-Tip for Hot Reloading:</strong> For a faster editing experience, install the <strong>Live Server</strong> extension inside Visual Studio Code. This will instantly refresh your open web browser preview window every single time you hit save on your code edits!
+        </div>
+
+        <h2>4. Support Assistance</h2>
+        <p>For custom backend implementation requests, checkout flow setup integrations, database configuration inquiries, or direct bug support assistance, feel free to contact me directly at your convenience through my author dashboard profile portal channels.</p>
+    </div>
+</body>
+</html>
